@@ -1,31 +1,40 @@
-# LLMEvalIQ v1 — dependencies
+# LLMEvalIQ v1 — DIRECT dependencies only.
+#
+# These are the 10 packages this project actually imports. Everything else in
+# the venv (~170 more) is a transitive dependency pulled in automatically.
+# Exact versions of the full tree live in requirements.lock.txt.
+#
+#   requirements.txt       -> what we chose, and why      (edit this by hand)
+#   requirements.lock.txt  -> what pip actually installed (pip freeze output)
+#
 # Python 3.12+ required (developed on 3.13)
-# Install with:  pip install -r requirements.txt
+# Install:  pip install -r requirements.txt
 
 # --- Document loading -------------------------------------------------------
-pypdf>=5.1.0                  # extract raw text out of PDF files
+pypdf>=6.0                    # extract raw text out of PDF files
 
 # --- LLM + embeddings -------------------------------------------------------
 # One SDK covers both: chat completions (generation) and the embeddings
 # endpoint (ingestion + retrieval).
-openai>=1.59.0
+# Major-version pinned: the client API changes between majors.
+openai>=3.0,<4
 
 # --- Vector store -----------------------------------------------------------
-chromadb>=0.5.20              # stores vectors on disk, does similarity search
+chromadb>=1.5                 # stores vectors on disk, does similarity search
 
 # --- Evaluation & analysis --------------------------------------------------
-pandas>=2.2.0                 # the scores table in Phases 5-9
+pandas>=2.2                   # the scores table in Phases 5-9
 
 # --- Notebooks --------------------------------------------------------------
-jupyter>=1.1.0
-ipykernel>=6.29.0
+jupyter>=1.1
+ipykernel>=6.29
 
 # --- Utilities --------------------------------------------------------------
-python-dotenv>=1.0.0          # loads OPENAI_API_KEY from .env
-tiktoken>=0.8.0               # count tokens before sending, for Phase 9
+python-dotenv>=1.0            # loads OPENAI_API_KEY from .env
+tiktoken>=0.8                 # count tokens before sending, for Phase 9
 
 # --- Tests ------------------------------------------------------------------
-pytest>=8.3.0
+pytest>=8.3
 
 # --- Dashboard (Phase 10 only — installed now, used later) ------------------
-streamlit>=1.40.0
+streamlit>=1.40
