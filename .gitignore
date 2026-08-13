@@ -216,3 +216,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---------------------------------------------------------------------------
+# LLMEvalIQ project-specific
+# ---------------------------------------------------------------------------
+
+# Source PDFs — large, and often not ours to redistribute.
+# The questions.csv that references them IS committed.
+data/documents/*
+!data/documents/.gitkeep
+
+# The vector store is a build artifact — rebuilt from documents in seconds.
+data/chroma/
+
+# Evaluation run outputs
+results/*
+!results/.gitkeep
+
+# Cached embedding models
+.cache/
