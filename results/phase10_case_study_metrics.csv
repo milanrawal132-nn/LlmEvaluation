@@ -1,0 +1,11 @@
+question_id,config_chunk_size,metric,value,unit,note
+q020,500,reference_value,20.3,percent,operating margin stated in the reference answer
+q020,500,model_value,25.3,percent,operating margin stated by the model (all 3 runs at chunk_size=500)
+q021,600,chunk_answer_bearing_cosine,0.503,cosine similarity,chunk#626 (600-config) fully contains the 443-clients / 1965-client-base prose; scores BELOW the corpus distractor floor
+q021,600,chunk_decoy_table_cosine,0.649,cosine similarity,chunk#627 (600-config) is the client-tier table immediately following; does NOT contain the required facts but scores higher
+q021,500,chunk_fused_cosine,0.711,cosine similarity,500-config chunk#766 fuses the tail of the answer prose with the start of the same table; borrows the table's high score
+q021,corpus,typical_distractor_floor_low,0.55,cosine similarity,typical top-1 distractor score range observed across Phase 5/7A (low end)
+q021,corpus,typical_distractor_floor_high,0.72,cosine similarity,typical top-1 distractor score range observed across Phase 5/7A (high end)
+q023,600,chunk596_span_coverage,34,percent,first chunk touching q023's gold span at chunk_size=600; covers only 54 of 160 span characters
+q023,600,chunk597_span_coverage,97.5,percent,second chunk touching q023's gold span at chunk_size=600; covers 156 of 160 span characters
+q023,600,n_runs_unsupported_correct,2,count,"of 3 runs at chunk_size=600, this question landed unsupported_correct twice"

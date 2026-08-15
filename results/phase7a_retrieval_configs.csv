@@ -1,0 +1,17 @@
+chunk_size,chunk_overlap,embedding_model,distance_metric,k,document_recall,gold_span_any_recall,gold_span_coverage,legacy_any_evidence_recall,legacy_evidence_coverage,chunk_count,index_size_mb,build_time_seconds,legacy_unfindable_count,span_unreachable_groups,groups_need_1_chunk,groups_need_2_chunks,groups_need_3plus_chunks
+300,50,text-embedding-3-small,cosine,1,0.92,0.16,0.14,0.16,0.14,41093,388.3,900.9,8,0,24,5,1
+300,50,text-embedding-3-small,cosine,3,1.0,0.16,0.1728,0.16,0.14,41093,388.3,900.9,8,0,24,5,1
+300,50,text-embedding-3-small,cosine,5,1.0,0.2,0.2128,0.2,0.18,41093,388.3,900.9,8,0,24,5,1
+300,50,text-embedding-3-small,cosine,10,1.0,0.2,0.2128,0.2,0.18,41093,388.3,900.9,8,0,24,5,1
+500,50,text-embedding-3-small,cosine,1,0.92,0.2,0.1574,0.2,0.15,22832,259.1,552.9,0,0,30,0,0
+500,50,text-embedding-3-small,cosine,3,1.0,0.2,0.1632,0.2,0.15,22832,259.1,552.9,0,0,30,0,0
+500,50,text-embedding-3-small,cosine,5,1.0,0.24,0.1974,0.24,0.19,22832,259.1,552.9,0,0,30,0,0
+500,50,text-embedding-3-small,cosine,10,1.0,0.32,0.2774,0.32,0.27,22832,259.1,552.9,0,0,30,0,0
+600,50,text-embedding-3-small,cosine,1,0.96,0.08,0.1047,0.08,0.06,18682,222.9,491.7,5,0,27,3,0
+600,50,text-embedding-3-small,cosine,3,1.0,0.12,0.181,0.12,0.11,18682,222.9,491.7,5,0,27,3,0
+600,50,text-embedding-3-small,cosine,5,1.0,0.2,0.239,0.16,0.15,18682,222.9,491.7,5,0,27,3,0
+600,50,text-embedding-3-small,cosine,10,1.0,0.28,0.319,0.24,0.23,18682,222.9,491.7,5,0,27,3,0
+1000,50,text-embedding-3-small,cosine,1,0.96,0.12,0.113,0.12,0.11,10819,189.5,307.6,2,0,29,1,0
+1000,50,text-embedding-3-small,cosine,3,1.0,0.12,0.1159,0.12,0.11,10819,189.5,307.6,2,0,29,1,0
+1000,50,text-embedding-3-small,cosine,5,1.0,0.2,0.1959,0.2,0.19,10819,189.5,307.6,2,0,29,1,0
+1000,50,text-embedding-3-small,cosine,10,1.0,0.24,0.2359,0.24,0.23,10819,189.5,307.6,2,0,29,1,0

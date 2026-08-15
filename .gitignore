@@ -226,12 +226,21 @@ __marimo__/
 data/documents/*
 !data/documents/.gitkeep
 
-# The vector store is a build artifact — rebuilt from documents in seconds.
+# The vector store is a build artifact — rebuilt from documents in a few
+# minutes with scripts/build_index.py. Hundreds of MB; never committed.
 data/chroma/
 
-# Evaluation run outputs
-results/*
-!results/.gitkeep
+# results/ is NOT a build artifact to hide — it is the project's deliverable.
+# Phase 5-9's CSVs/MDs are the evidentiary record the dashboard, the final
+# report, and a portfolio reviewer all depend on; a blanket ignore here would
+# make the repo look unfinished to anyone who clones it without having run
+# the pipeline themselves. Previously `results/*` excluded everything except
+# .gitkeep — changed during the Phase 10 repository audit.
+#
+# human_review_context.md is the one borderline file (87KB): kept, since it
+# is the actual review material behind the judge-calibration numbers, not
+# machine-generated bulk output.
 
 # Cached embedding models
 .cache/
+.DS_Store

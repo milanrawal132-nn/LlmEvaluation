@@ -42,12 +42,16 @@ def test_api_key_present() -> None:
     assert key != "sk-your-key-here", "OPENAI_API_KEY is still the placeholder value"
 
 
-def test_embedding_model_is_shared() -> None:
-    """Retrieval must embed questions with the SAME model used for documents.
+def test_retrieval_embeds_queries_with_ingestion_function() -> None:
+    """Questions must be embedded by the SAME code that embedded the documents.
 
     Two different embedding models = two incompatible coordinate systems, and
-    retrieval silently returns garbage. This test pins that invariant.
+    retrieval silently returns confident garbage with no error to catch.
+
+    We assert identity of the *function*, not equality of a model-name string:
+    sharing the function means the model, dimensions, and batching cannot drift
+    apart even if someone edits one file and forgets the other.
     """
     from src import ingestion, retrieval
 
-    assert retrieval.EMBEDDING_MODEL == ingestion.EMBEDDING_MODEL
+    assert retrieval.embed_texts is ingestion.embed_texts

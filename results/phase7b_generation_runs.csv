@@ -1,0 +1,155 @@
+chunk_size,run_index,question_id,difficulty,question_type,evidence_mode,evidence_hit,abstained,correct,faithful,relevant,failure_label,input_tokens,output_tokens,cost_usd,latency_seconds,answer
+500,1,q001,easy,descriptive,all,0,1,0,1,1,retrieval_failure_honest,839,4,0.000128,2.84,I don't know.
+500,1,q002,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,833,4,0.000127,1.29,I don't know.
+500,1,q003,easy,date,all,1,0,0,0,1,generation_failure,823,24,0.000138,1.09,"Priyal Saurabh Vora was made an independent director at Ecoplast on August 12, 2025."
+500,1,q004,easy,entity,all,0,1,0,1,1,retrieval_failure_honest,731,4,0.000112,1.21,I don't know.
+500,1,q005,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,832,4,0.000127,0.76,I don't know.
+500,1,q006,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,824,4,0.000126,1.18,I don't know.
+500,1,q007,easy,entity,all,0,0,0,1,1,retrieval_failure_hallucinated,692,12,0.000111,1.13,Ecoplast operates in the value-added product business segment.
+500,1,q008,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,834,4,0.000128,0.75,I don't know.
+500,1,q009,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,812,4,0.000124,0.92,I don't know.
+500,1,q010,difficult,descriptive,all,1,0,0,1,1,generation_failure,780,51,0.000148,1.37,Ecoplast states that increased trade tariffs announced by the USA on India and the resulting uncertainty affected export orders and realizations during the year. The company is responding by concentrating its efforts on development (although the context does not specify what developments are being made).
+500,1,q011,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,891,4,0.000136,1.13,I don't know.
+500,1,q012,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,869,4,0.000133,0.83,I don't know.
+500,1,q013,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,862,4,0.000132,0.93,I don't know.
+500,1,q014,easy,descriptive,all,0,1,0,1,1,retrieval_failure_honest,890,4,0.000136,0.78,I don't know.
+500,1,q015,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,932,4,0.000142,0.88,I don't know.
+500,1,q016,medium,numeric,all,0,0,0,0,1,retrieval_failure_hallucinated,887,31,0.000152,1.12,"Goa Carbon paid 2,338.73 in the year before (2024-25) at a cost of 1,806.44."
+500,1,q017,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,875,4,0.000134,0.7,I don't know.
+500,1,q018,difficult,comparison,all,0,1,0,1,1,retrieval_failure_honest,882,4,0.000135,0.86,I don't know.
+500,1,q019,easy,numeric,any,1,1,0,1,1,generation_refusal,898,4,0.000137,0.78,I don't know.
+500,1,q020,easy,numeric,all,0,0,0,1,1,retrieval_failure_hallucinated,915,20,0.000149,1.74,The Infosys operating margin on a consolidated basis in fiscal 2026 was 25.3%.
+500,1,q021,easy,numeric,all,1,0,0,0,1,generation_failure,923,25,0.000153,1.18,"Infosys won 2 clients during fiscal 2026, increasing its client base to 1,965 at year end."
+500,1,q022,easy,numeric,all,1,0,1,1,1,grounded_correct,777,27,0.000133,1.0,"10,766 fresh graduates completed the training at the Global Education Center (GEC) campus, Mysuru during fiscal 2026."
+500,1,q023,easy,numeric,all,0,0,0,1,1,retrieval_failure_hallucinated,812,14,0.00013,0.78,84% of Infosys staff is AI-aware. I don't know.
+500,1,q024,medium,comparison,all,1,0,1,1,1,grounded_correct,973,31,0.000165,1.23,"In fiscal 2026, there were 41 Infosys clients in the $100 million-plus bracket, compared to 39 in fiscal 2025."
+500,1,q025,difficult,descriptive,all,0,0,0,0,1,retrieval_failure_hallucinated,799,102,0.000181,1.93,"The Labour Codes notified in November 2025 had a non-recurring impact on Infosys numbers, resulting in an increase in the impact amount presented as “Impact of Labour Codes” under “Exceptional Item” in the Consolidated Statement of Profit and Loss for the year ended March 31, 2026. The effect on Diluted EPS, excluding the impact of Labour Codes, increased by 16.0% on a standalone basis and 12.2% on a consolidated basis for the same period."
+500,2,q001,easy,descriptive,all,0,1,0,1,1,retrieval_failure_honest,839,4,0.000128,0.75,I don't know.
+500,2,q002,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,833,4,0.000127,1.42,I don't know.
+500,2,q003,easy,date,all,1,0,0,1,1,generation_failure,823,26,0.000139,0.93,"Priyal Saurabh Vora was approved as an Independent Director at the AGM held on August 12, 2025."
+500,2,q004,easy,entity,all,0,1,0,1,1,retrieval_failure_honest,731,4,0.000112,0.74,I don't know.
+500,2,q005,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,832,4,0.000127,0.81,I don't know.
+500,2,q006,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,824,4,0.000126,0.66,I don't know.
+500,2,q007,easy,entity,all,0,0,0,1,1,retrieval_failure_hallucinated,692,12,0.000111,1.11,Ecoplast operates in the value-added product business segment.
+500,2,q008,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,834,4,0.000128,3.2,I don't know.
+500,2,q009,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,812,4,0.000124,0.84,I don't know.
+500,2,q010,difficult,descriptive,all,1,0,0,1,1,generation_failure,780,42,0.000142,1.09,"Ecoplast reported increased trade tariffs announced by the USA on India and the resulting uncertainty affecting export orders and realizations. In response, the company is concentrating its efforts on developing its business to address these challenges."
+500,2,q011,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,891,4,0.000136,0.88,I don't know.
+500,2,q012,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,869,4,0.000133,0.76,I don't know.
+500,2,q013,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,862,4,0.000132,3.2,I don't know.
+500,2,q014,easy,descriptive,all,0,1,0,1,1,retrieval_failure_honest,890,4,0.000136,0.74,I don't know.
+500,2,q015,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,932,4,0.000142,0.85,I don't know.
+500,2,q016,medium,numeric,all,0,0,0,0,1,retrieval_failure_hallucinated,887,31,0.000152,1.03,"In the year before (2024-25), Goa Carbon paid 2,338.73 to shareholders, which cost 1,806.44."
+500,2,q017,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,875,4,0.000134,0.74,I don't know.
+500,2,q018,difficult,comparison,all,0,1,0,1,1,retrieval_failure_honest,882,4,0.000135,1.01,I don't know.
+500,2,q019,easy,numeric,any,1,0,1,0,1,grounded_correct,898,25,0.00015,0.94,The basic earnings per share reported by Infosys on a consolidated basis for fiscal 2026 is ` 71.58.
+500,2,q020,easy,numeric,all,0,0,0,1,1,retrieval_failure_hallucinated,915,20,0.000149,0.8,The Infosys operating margin on a consolidated basis in fiscal 2026 was 25.3%.
+500,2,q021,easy,numeric,all,1,0,0,0,1,generation_failure,923,25,0.000153,1.63,"Infosys won 2 clients during fiscal 2026, increasing its client base to 1,965 at year end."
+500,2,q022,easy,numeric,all,1,0,1,1,1,grounded_correct,777,27,0.000133,0.99,"10,766 fresh graduates completed the training at the Global Education Center (GEC) campus in Mysuru during fiscal 2026."
+500,2,q023,easy,numeric,all,0,0,0,1,1,retrieval_failure_hallucinated,812,31,0.00014,0.8,The share of Infosys staff that is AI-aware is 84%. I don't know how many hours employees spent learning on average in fiscal 2026.
+500,2,q024,medium,comparison,all,1,0,1,1,1,grounded_correct,973,31,0.000165,1.1,"In fiscal 2026, there were 41 Infosys clients in the $100 million-plus bracket, compared to 39 in fiscal 2025."
+500,2,q025,difficult,descriptive,all,0,0,0,1,1,retrieval_failure_hallucinated,799,111,0.000186,1.94,"The Labour Codes affected Infosys by leading to an increase in compensated absences and a past service cost of `1,289 crore. This impact was considered non-recurring and was presented as “Impact of Labour Codes” under “Exceptional Item” in the Consolidated Statement of Profit and Loss for the year ended March 31, 2026. Additionally, excluding the effect of the Labour Codes provisions, the Diluted EPS increase was 16.0% on a standalone basis and 12.2% on a consolidated basis for the same period."
+500,3,q001,easy,descriptive,all,0,1,0,1,1,retrieval_failure_honest,839,4,0.000128,0.91,I don't know.
+500,3,q002,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,833,4,0.000127,0.79,I don't know.
+500,3,q003,easy,date,all,1,0,0,1,1,generation_failure,823,24,0.000138,0.92,"Priyal Saurabh Vora was made an independent director at Ecoplast on May 27, 2025."
+500,3,q004,easy,entity,all,0,0,0,0,1,retrieval_failure_hallucinated,731,47,0.000138,1.27,"The context does not specify which specific business was folded into Ecoplast. It only mentions that all business and operating entities within the group were consolidated under Ecoplast Limited, with a focus on the value-added product business since 2024."
+500,3,q005,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,832,4,0.000127,0.91,I don't know.
+500,3,q006,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,824,4,0.000126,0.71,I don't know.
+500,3,q007,easy,entity,all,0,0,0,1,1,retrieval_failure_hallucinated,692,12,0.000111,0.88,Ecoplast operates in the value-added product business segment.
+500,3,q008,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,834,4,0.000128,0.77,I don't know.
+500,3,q009,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,812,4,0.000124,0.74,I don't know.
+500,3,q010,difficult,descriptive,all,1,0,0,1,0,generation_failure,780,37,0.000139,1.2,Ecoplast reports that increased trade tariffs announced by the USA on India and resulting uncertainty affected export orders and realizations. The company is responding by concentrating its efforts on developing its business.
+500,3,q011,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,891,4,0.000136,0.83,I don't know.
+500,3,q012,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,869,4,0.000133,0.68,I don't know.
+500,3,q013,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,862,4,0.000132,1.11,I don't know.
+500,3,q014,easy,descriptive,all,0,1,0,1,1,retrieval_failure_honest,890,4,0.000136,0.81,I don't know.
+500,3,q015,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,932,4,0.000142,0.79,I don't know.
+500,3,q016,medium,numeric,all,0,0,0,0,1,retrieval_failure_hallucinated,887,27,0.000149,1.39,"Goa Carbon paid 2,338.73 in 2025-26 and 1,806.44 the year before."
+500,3,q017,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,875,4,0.000134,0.68,I don't know.
+500,3,q018,difficult,comparison,all,0,1,0,1,1,retrieval_failure_honest,882,4,0.000135,1.04,I don't know.
+500,3,q019,easy,numeric,any,1,0,1,0,1,grounded_correct,898,25,0.00015,1.13,The basic earnings per share reported by Infosys on a consolidated basis for fiscal 2026 is ` 71.58.
+500,3,q020,easy,numeric,all,0,0,0,1,1,retrieval_failure_hallucinated,915,20,0.000149,0.77,The Infosys operating margin on a consolidated basis in fiscal 2026 was 25.3%.
+500,3,q021,easy,numeric,all,1,0,0,0,1,generation_failure,923,26,0.000154,1.38,"Infosys won 2 clients during fiscal 2026, and its client base at year end stood at 1,965."
+500,3,q022,easy,numeric,all,1,0,1,1,1,grounded_correct,777,27,0.000133,1.22,"10,766 fresh graduates completed the training at the Global Education Center (GEC) campus, Mysuru during fiscal 2026."
+500,3,q023,easy,numeric,all,0,0,0,1,1,retrieval_failure_hallucinated,812,14,0.00013,0.82,84% of Infosys staff is AI-aware. I don't know.
+500,3,q024,medium,comparison,all,1,0,1,1,1,grounded_correct,973,31,0.000165,1.17,"In fiscal 2026, there were 41 Infosys clients in the $100 million-plus bracket, compared to 39 in fiscal 2025."
+500,3,q025,difficult,descriptive,all,0,0,0,0,1,retrieval_failure_hallucinated,799,127,0.000196,2.15,"The Labour Codes notified on November 21, 2025, had a non-recurring impact on Infosys, specifically increasing the past service cost and compensated absences by ₹1,289 crore. The incremental amount was presented as “Impact of Labour Codes” under “Exceptional Item” in the Consolidated Statement of Profit and Loss for the year ended March 31, 2026. For the standalone and consolidated basis, the effect on the Diluted EPS increase (in ₹ terms) was 16.0% and 12.2% YoY, respectively, for the year ended March 31, 2026."
+600,1,q001,easy,descriptive,all,0,1,0,1,1,retrieval_failure_honest,963,4,0.000147,1.19,I don't know.
+600,1,q002,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1013,4,0.000154,1.02,I don't know.
+600,1,q003,easy,date,all,1,0,0,1,1,generation_failure,1009,22,0.000165,1.02,"Priyal Saurabh Vora was appointed as an Independent Director on May 27, 2025."
+600,1,q004,easy,entity,all,0,1,0,1,1,retrieval_failure_honest,798,4,0.000122,1.04,I don't know.
+600,1,q005,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,968,4,0.000148,0.82,I don't know.
+600,1,q006,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,975,4,0.000149,1.14,I don't know.
+600,1,q007,easy,entity,all,0,0,1,1,1,unsupported_correct,802,14,0.000129,0.97,Ecoplast operates in the single reportable segment of Plastic Films.
+600,1,q008,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,979,4,0.000149,0.84,I don't know.
+600,1,q009,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,1040,4,0.000158,0.99,I don't know.
+600,1,q010,difficult,descriptive,all,1,0,1,1,1,grounded_correct,840,89,0.000179,1.54,"Ecoplast identified two external disruptions: 
+
+1. Increased trade tariffs announced by the USA on India, affecting export orders and realizations. The company is responding by developing new customers across other export markets and focusing on higher-value added products.
+
+2. The escalation of conflict in West Asia, which significantly affected the availability and pricing of raw materials. The company is mitigating this risk by securing its raw material supply chains to ensure uninterrupted production and delivery."
+600,1,q011,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1119,4,0.00017,1.04,I don't know.
+600,1,q012,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,855,4,0.000131,0.73,I don't know.
+600,1,q013,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1022,4,0.000156,0.88,I don't know.
+600,1,q014,easy,descriptive,all,0,1,0,1,1,retrieval_failure_honest,1065,4,0.000162,0.73,I don't know.
+600,1,q015,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1098,4,0.000167,1.32,I don't know.
+600,1,q016,medium,numeric,all,0,1,0,1,1,retrieval_failure_honest,1098,4,0.000167,0.79,I don't know.
+600,1,q017,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,1113,4,0.000169,0.65,I don't know.
+600,1,q018,difficult,comparison,all,0,1,0,1,1,retrieval_failure_honest,1055,4,0.000161,0.68,I don't know.
+600,1,q019,easy,numeric,any,1,0,1,1,1,grounded_correct,1150,24,0.000187,1.01,Infosys reported a basic earnings per share of ` 71.58 for fiscal 2026 on a consolidated basis.
+600,1,q020,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1200,4,0.000182,0.87,I don't know.
+600,1,q021,easy,numeric,all,0,0,0,1,1,retrieval_failure_hallucinated,926,37,0.000161,1.14,"Infosys added 443 new customers during fiscal 2026. At the year end, the client base included 1,018 clients that generate over 1 million dollars in revenue."
+600,1,q022,easy,numeric,all,1,0,1,1,1,grounded_correct,844,27,0.000143,1.0,"10,766 fresh graduates completed the training at the Global Education Center (GEC) campus in Mysuru during fiscal 2026."
+600,1,q023,easy,numeric,all,0,0,1,0,1,unsupported_correct,846,28,0.000144,1.07,"In fiscal 2026, 84% of Infosys staff is AI-aware, and employees spent an average of 113 hours learning."
+600,1,q024,medium,comparison,all,1,0,1,1,1,grounded_correct,1189,31,0.000197,1.06,"In fiscal 2026, Infosys had 41 clients in the $100 million-plus bracket, compared to 39 clients in fiscal 2025."
+600,1,q025,difficult,descriptive,all,0,0,0,0,1,retrieval_failure_hallucinated,1000,99,0.000209,1.4,"The Labour Codes notified in November 2025 resulted in an increase in gratuity liability and compensated absences by ₹1,289 crore for Infosys. Additionally, there was a statutory impact of new Labour Codes, reflected as an exceptional item of ₹256.57 crore for the year ended March 31, 2026. The consolidated reporting impacted employee benefit obligations according to the revised definition of wages, but specific differences in effects between standalone and consolidated reporting are not detailed in the provided context."
+600,2,q001,easy,descriptive,all,0,1,0,1,1,retrieval_failure_honest,963,4,0.000147,1.05,I don't know.
+600,2,q002,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1013,4,0.000154,0.9,I don't know.
+600,2,q003,easy,date,all,1,0,0,1,1,generation_failure,1009,22,0.000165,0.87,"Priyal Saurabh Vora was appointed as an Independent Director on May 27, 2025."
+600,2,q004,easy,entity,all,0,1,0,1,1,retrieval_failure_honest,798,4,0.000122,0.86,I don't know.
+600,2,q005,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,968,4,0.000148,0.8,I don't know.
+600,2,q006,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,975,4,0.000149,0.77,I don't know.
+600,2,q007,easy,entity,all,0,0,1,1,1,unsupported_correct,802,14,0.000129,0.82,Ecoplast operates in the single reportable segment of Plastic Films.
+600,2,q008,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,979,4,0.000149,0.97,I don't know.
+600,2,q009,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,1040,4,0.000158,0.73,I don't know.
+600,2,q010,difficult,descriptive,all,1,0,0,1,1,generation_failure,840,83,0.000176,1.42,"Ecoplast identified two external disruptions: increased trade tariffs announced by the USA on India and the escalation of conflict in West Asia. In response to the trade tariffs, the Company is concentrating efforts on developing new customers across other export markets and maintaining a focus on higher-value added products. To mitigate the impact of the conflict in West Asia, the Company is securing its raw material supply chains to ensure uninterrupted production and delivery."
+600,2,q011,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1119,4,0.00017,0.91,I don't know.
+600,2,q012,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,855,4,0.000131,0.75,I don't know.
+600,2,q013,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1022,4,0.000156,0.95,I don't know.
+600,2,q014,easy,descriptive,all,0,1,0,1,1,retrieval_failure_honest,1065,4,0.000162,1.1,I don't know.
+600,2,q015,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1098,4,0.000167,0.83,I don't know.
+600,2,q016,medium,numeric,all,0,1,0,1,1,retrieval_failure_honest,1098,4,0.000167,0.7,I don't know.
+600,2,q017,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,1113,4,0.000169,0.92,I don't know.
+600,2,q018,difficult,comparison,all,0,1,0,1,1,retrieval_failure_honest,1055,4,0.000161,1.93,I don't know.
+600,2,q019,easy,numeric,any,1,0,1,1,1,grounded_correct,1150,23,0.000186,1.3,Infosys reported basic earnings per share of ` 71.58 on a consolidated basis for fiscal 2026.
+600,2,q020,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1200,4,0.000182,0.97,I don't know.
+600,2,q021,easy,numeric,all,0,0,0,1,1,retrieval_failure_hallucinated,926,37,0.000161,1.2,"Infosys added 443 new customers during fiscal 2026. At the year end, the client base included 1,018 clients who account for 1 million dollars or more."
+600,2,q022,easy,numeric,all,1,0,1,1,1,grounded_correct,844,27,0.000143,1.31,"10,766 fresh graduates completed the training at the Global Education Center (GEC) campus, Mysuru during fiscal 2026."
+600,2,q023,easy,numeric,all,0,0,0,0,1,retrieval_failure_hallucinated,846,26,0.000142,0.94,"84% of Infosys staff is AI-aware, and employees spent an average of 113 hours learning in fiscal 2026."
+600,2,q024,medium,comparison,all,1,0,1,1,1,grounded_correct,1189,36,0.0002,1.64,"In fiscal 2026, Infosys had 41 clients in the $100 million-plus bracket, compared to 39 clients in the prior year (fiscal 2025)."
+600,2,q025,difficult,descriptive,all,0,0,0,0,1,retrieval_failure_hallucinated,1000,80,0.000198,1.52,"The Labour Codes notified in November 2025 resulted in an increase in gratuity liability and compensated absences by ₹1,289 crore for Infosys. Additionally, there was a statutory impact of ₹256.57 crore for the year ended March 31, 2026 in standalone reporting, while no such impact was indicated for the previous year. In consolidated reporting, no specific effect is mentioned."
+600,3,q001,easy,descriptive,all,0,1,0,1,1,retrieval_failure_honest,963,4,0.000147,1.28,I don't know.
+600,3,q002,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1013,4,0.000154,0.69,I don't know.
+600,3,q003,easy,date,all,1,0,0,1,1,generation_failure,1009,25,0.000166,0.88,"Priyal Saurabh Vora was appointed as an Additional Director (Independent) on May 27, 2025."
+600,3,q004,easy,entity,all,0,1,0,1,1,retrieval_failure_honest,798,4,0.000122,0.59,I don't know.
+600,3,q005,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,968,4,0.000148,1.48,I don't know.
+600,3,q006,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,975,4,0.000149,0.84,I don't know.
+600,3,q007,easy,entity,all,0,0,1,1,1,unsupported_correct,802,14,0.000129,2.24,Ecoplast operates in the single reportable segment of Plastic Films.
+600,3,q008,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,979,4,0.000149,1.69,I don't know.
+600,3,q009,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,1040,4,0.000158,1.84,I don't know.
+600,3,q010,difficult,descriptive,all,1,0,0,1,1,generation_failure,840,81,0.000175,1.3,"Ecoplast faced increased trade tariffs announced by the USA on India, affecting export orders and realizations. The company is responding by concentrating its efforts on developing new customers across other export markets. Additionally, the escalation of conflict in West Asia affected the availability and pricing of raw materials, impacting margins and demand. Ecoplast is mitigating this risk by securing its raw material supply chains to ensure uninterrupted production and delivery."
+600,3,q011,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1119,4,0.00017,0.72,I don't know.
+600,3,q012,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,855,4,0.000131,0.76,I don't know.
+600,3,q013,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1022,4,0.000156,1.01,I don't know.
+600,3,q014,easy,descriptive,all,0,1,0,1,1,retrieval_failure_honest,1065,4,0.000162,0.83,I don't know.
+600,3,q015,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1098,4,0.000167,0.91,I don't know.
+600,3,q016,medium,numeric,all,0,1,0,1,1,retrieval_failure_honest,1098,4,0.000167,0.67,I don't know.
+600,3,q017,medium,comparison,all,0,1,0,1,1,retrieval_failure_honest,1113,4,0.000169,1.05,I don't know.
+600,3,q018,difficult,comparison,all,0,1,0,1,1,retrieval_failure_honest,1055,4,0.000161,1.11,I don't know.
+600,3,q019,easy,numeric,any,1,0,1,1,1,grounded_correct,1150,24,0.000187,1.03,The basic earnings per share that Infosys reported on a consolidated basis for fiscal 2026 is 71.58.
+600,3,q020,easy,numeric,all,0,1,0,1,1,retrieval_failure_honest,1200,4,0.000182,0.66,I don't know.
+600,3,q021,easy,numeric,all,0,0,0,1,1,retrieval_failure_hallucinated,926,36,0.00016,1.15,"Infosys added 443 new customers during fiscal 2026. At year end, the client base included 1,018 clients with revenues of 1 million dollars or more."
+600,3,q022,easy,numeric,all,1,0,1,1,1,grounded_correct,844,27,0.000143,1.24,"10,766 fresh graduates completed the training at the Global Education Center (GEC) campus, Mysuru during fiscal 2026."
+600,3,q023,easy,numeric,all,0,0,1,0,1,unsupported_correct,846,32,0.000146,1.02,"Cumulatively, 84% of Infosys's workforce is AI-aware, and employees spent an average of 113 hours learning in fiscal 2026."
+600,3,q024,medium,comparison,all,1,0,1,1,1,grounded_correct,1189,36,0.0002,1.19,"In fiscal 2026, there were 41 Infosys clients in the $100 million-plus bracket, compared to 39 in the prior year (fiscal 2025)."
+600,3,q025,difficult,descriptive,all,0,0,0,0,1,retrieval_failure_hallucinated,1000,89,0.000203,1.58,"The Labour Codes notified in November 2025 resulted in an increase in gratuity liability and compensated absences by ₹1,289 crore for Infosys. In the context of consolidated reporting, there was a statutory impact of the new Labour Codes amounting to 256.57 in the year ended March 31, 2026, while there was no impact reported in the year ended March 31, 2025. I don't know."

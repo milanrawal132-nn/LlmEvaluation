@@ -2,17 +2,17 @@
 
 This is the student in the open-book exam. The LLM is NOT the knowledge
 source here — it is a reading-comprehension engine over text we hand it.
-
-Implemented in Phase 4, measured in Phases 6 and 9.
 """
 
+import os
+import time
 from dataclasses import dataclass
+
+from openai import OpenAI
 
 from src.retrieval import RetrievedChunk
 
 # One LLM for the whole project (roadmap rule: change one thing at a time).
-# gpt-4o-mini is cheap enough to run the full 100-question set many times
-# while we iterate. Swap it here and nowhere else if you want a bigger model.
 MODEL = "gpt-4o-mini"
 
 # Price per 1,000,000 tokens, in US dollars. Phase 9 turns token counts into
@@ -55,19 +55,63 @@ def build_prompt(question: str, chunks: list[RetrievedChunk]) -> str:
     """Assemble the retrieved chunks and the question into one prompt.
 
     Kept separate from generate() so a notebook can print the exact prompt.
-    Being able to see what the model actually received is most of debugging.
+    Being able to see what the model actually received is most of debugging —
+    if the answer is wrong, the first question is always "was the fact even
+    in the prompt?"
+
+    Each chunk is labelled with its source and pages. That label is for the
+    reader, not the model: when you print the prompt you can see instantly
+    whether retrieval brought the right pages.
     """
-    raise NotImplementedError("Phase 4")
+    blocks = []
+    for i, chunk in enumerate(chunks, start=1):
+        pages = ", ".join(str(p) for p in chunk.page_numbers)
+        blocks.append(
+            f"[{i}] source: {chunk.source_document} (page {pages})\n{chunk.text}"
+        )
+    context = "\n\n".join(blocks)
+    return f"Context:\n{context}\n\nQuestion: {question}"
 
 
 def generate(question: str, chunks: list[RetrievedChunk]) -> Answer:
     """Ask the LLM the question, given only these chunks as context.
 
-    Args:
-        question: The user's question.
-        chunks: Context from retrieval.
-
-    Returns:
-        The answer, with token counts and wall-clock latency attached.
+    Latency and token counts are captured here because this is the only place
+    they exist. The API reports usage on the response; if we do not record it
+    now, Phase 9 can never recover it.
     """
-    raise NotImplementedError("Phase 4")
+    key = os.getenv("OPENAI_API_KEY")
+    if not key:
+        raise RuntimeError("OPENAI_API_KEY not set — copy .env.example to .env")
+    client = OpenAI(api_key=key)
+
+    prompt = build_prompt(question, chunks)
+
+    started = time.perf_counter()
+    response = client.chat.completions.create(
+        model=MODEL,
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": prompt},
+        ],
+    )
+    latency = time.perf_counter() - started
+
+    return Answer(
+        text=(response.choices[0].message.content or "").strip(),
+        input_tokens=response.usage.prompt_tokens,
+        output_tokens=response.usage.completion_tokens,
+        latency_seconds=latency,
+    )
+
+
+def answer_question(question: str, store_dir, k: int | None = None) -> tuple[Answer, list[RetrievedChunk]]:
+    """Convenience wrapper: retrieve, then generate.
+
+    Returns the chunks alongside the answer because every evaluation metric in
+    Phase 5 and 6 needs them. An answer without its context is unscoreable.
+    """
+    from src.retrieval import TOP_K, retrieve
+
+    chunks = retrieve(question, store_dir, k or TOP_K)
+    return generate(question, chunks), chunks
