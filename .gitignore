@@ -230,6 +230,11 @@ data/documents/*
 # minutes with scripts/build_index.py. Hundreds of MB; never committed.
 data/chroma/
 
+# User-uploaded PDFs (app/ask.py) and their standalone index — not part of
+# the curated corpus, not ours to redistribute, and regenerated on upload.
+data/uploads/
+data/chroma_uploads/
+
 # results/ is NOT a build artifact to hide — it is the project's deliverable.
 # Phase 5-9's CSVs/MDs are the evidentiary record the dashboard, the final
 # report, and a portfolio reviewer all depend on; a blanket ignore here would
